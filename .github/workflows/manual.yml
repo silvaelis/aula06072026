@@ -40,4 +40,8 @@ jobs:
     - name: Criar Pasta
       run: mkdir "${{ inputs.name }}"-"${{ inputs.ambiente }}"
     - name: Ver a versao do Python
-      run: python --version
+      run: |
+        python --version
+        ls -all
+        echo"print("Hello")" > hello.py
+        python hello.py
