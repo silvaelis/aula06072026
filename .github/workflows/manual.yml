@@ -39,3 +39,5 @@ jobs:
     # Runs a single command using the runners shell
     - name: Criar Pasta
       run: mkdir "${{ inputs.name }}"-"${{ inputs.ambiente }}"
+    - name: Ver a versao do Python
+      run: python --version
